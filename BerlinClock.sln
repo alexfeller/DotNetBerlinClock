@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock", "BerlinClock.csproj", "{0451204D-BF86-43E1-B560-FC9AC830B9A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock.Tests", "Tests\BerlinClock.Tests.csproj", "{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clock", "Clock\Clock.csproj", "{581A547B-1522-4932-9BFF-A044B757387B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{581A547B-1522-4932-9BFF-A044B757387B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{581A547B-1522-4932-9BFF-A044B757387B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{581A547B-1522-4932-9BFF-A044B757387B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{581A547B-1522-4932-9BFF-A044B757387B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7EC2EC9-1980-432D-8F7A-ED6E1B170057}
+	EndGlobalSection
+EndGlobal
