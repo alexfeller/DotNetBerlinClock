@@ -61,15 +61,6 @@ namespace BerlinClock.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid color format. Only Red, Yellow and Empty colors allowed..
-        /// </summary>
-        internal static string InvalidColorFormat {
-            get {
-                return ResourceManager.GetString("InvalidColorFormat", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Invalid hour. The value should be between 0 and 24.
         /// </summary>
         internal static string InvalidHourFormat {
