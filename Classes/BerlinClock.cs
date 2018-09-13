@@ -173,7 +173,7 @@ namespace BerlinClock
         public LampType Second { get; private set; }
 
         /// <inheritdoc />
-        public ReadOnlyCollection<LampType> Hour1
+        public IReadOnlyCollection<LampType> Hour1
         {
             get
             {
@@ -182,7 +182,7 @@ namespace BerlinClock
         }
 
         /// <inheritdoc/>
-        public ReadOnlyCollection<LampType> Hour2
+        public IReadOnlyCollection<LampType> Hour2
         {
             get
             {
@@ -191,7 +191,7 @@ namespace BerlinClock
         }
 
         /// <inheritdoc/>
-        public ReadOnlyCollection<LampType> Minute1
+        public IReadOnlyCollection<LampType> Minute1
         {
             get
             {
@@ -200,7 +200,7 @@ namespace BerlinClock
         }
 
         /// <inheritdoc/>
-        public ReadOnlyCollection<LampType> Minute2
+        public IReadOnlyCollection<LampType> Minute2
         {
             get
             {
