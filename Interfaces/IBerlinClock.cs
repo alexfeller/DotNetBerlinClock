@@ -1,5 +1,6 @@
 ﻿using Clock;
 using System.Collections.ObjectModel;
+using System.Collections.Generic;
 
 namespace BerlinClock
 {
@@ -24,23 +25,23 @@ namespace BerlinClock
         /// <summary>
         /// The top row of four red fields denote five full hours each.
         /// </summary>
-        ReadOnlyCollection<LampType> Hour1 { get; }
+        IReadOnlyCollection<LampType> Hour1 { get; }
 
         /// <summary>
         /// The second row of four red fields denote the full hour each.
         /// </summary>
-        ReadOnlyCollection<LampType> Hour2 { get; }
+        IReadOnlyCollection<LampType> Hour2 { get; }
 
         /// <summary>
         ///  The third row consists of eleven yellow-and-red fields, which denote five full minutes each.
         ///  (the red ones also denoting 15, 30 and 45 minutes past)
         /// </summary>
-        ReadOnlyCollection<LampType> Minute1 { get; }
+        IReadOnlyCollection<LampType> Minute1 { get; }
 
         /// <summary>
         /// Thw last row consists of four yellow fields, which mark one full minute each.
         /// </summary>
-        ReadOnlyCollection<LampType> Minute2 { get; }
+        IReadOnlyCollection<LampType> Minute2 { get; }
 
         #endregion
     }
