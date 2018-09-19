@@ -1,7 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using DotNetBerlinClock.Domain.Classes;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace BerlinClock.Tests
+namespace DotNetBerlinClock.Tests
 {
     [TestClass()]
     public class TimeTests

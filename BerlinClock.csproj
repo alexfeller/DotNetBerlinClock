@@ -7,8 +7,8 @@
     <ProjectGuid>{0451204D-BF86-43E1-B560-FC9AC830B9A9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BerlinClock</RootNamespace>
-    <AssemblyName>BerlinClock</AssemblyName>
+    <RootNamespace>DotNetBerlinClock.BerlinClock</RootNamespace>
+    <AssemblyName>DotNetBerlinClock.BerlinClock</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -58,22 +58,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDD\BerlinClockFeatureSteps.cs" />
-    <Compile Include="Classes\BerlinClock.cs" />
-    <Compile Include="Classes\LampType.cs" />
-    <Compile Include="Interfaces\IBerlinClock.cs" />
-    <Compile Include="Classes\Time.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BDD\BerlinClockFeatureSteps.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BerlinClockFeatureSteps.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaces\ITimeConverter.cs" />
-    <Compile Include="Classes\TimeConverter.cs" />
-    <Compile Include="Resources\Error.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Error.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -88,18 +77,16 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Error.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Error.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Clock\Clock.csproj">
-      <Project>{581a547b-1522-4932-9bff-a044b757387b}</Project>
-      <Name>Clock</Name>
+    <ProjectReference Include="Domain\Domain.csproj">
+      <Project>{a1a723c6-86ee-4c50-9233-334b79454f49}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="IoC.StructureMapping\IoC.StructureMapping.csproj">
+      <Project>{cdffeb00-0d60-4331-9b32-d48a5c31621f}</Project>
+      <Name>IoC.StructureMapping</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

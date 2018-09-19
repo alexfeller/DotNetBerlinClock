@@ -1,9 +1,10 @@
-﻿using Clock;
+﻿
+using DotNetBerlinClock.Domain.Interfaces;
 using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
 
-namespace BerlinClock
+namespace DotNetBerlinClock.Domain.Classes
 {
     /// <summary>
     /// Represents an instant in time in 24 hours format, expressed as hour, minute and second.

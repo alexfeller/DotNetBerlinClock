@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DotNetBerlinClock.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BerlinClock
+namespace DotNetBerlinClock.Domain.Classes
 {
     /// <inheritdoc/>
     public class BerlinClock : IBerlinClock
@@ -27,9 +28,9 @@ namespace BerlinClock
 
             _colorIdentifiers = new Dictionary<LampType, string>()
             {
-                { LampType.Red, "R" },
-                { LampType.Yellow, "Y" },
-                { LampType.White, "O" }
+                { LampType.Red, Resources.Colors.Red },
+                { LampType.Yellow, Resources.Colors.Yellow },
+                { LampType.White, Resources.Colors.White }
             };
         }
 

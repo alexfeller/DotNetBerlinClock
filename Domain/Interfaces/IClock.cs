@@ -1,4 +1,4 @@
-﻿namespace Clock
+﻿namespace DotNetBerlinClock.Domain.Interfaces
 {
     public interface IClock<T> where T : ITime
     {

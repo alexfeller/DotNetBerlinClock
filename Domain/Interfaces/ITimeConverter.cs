@@ -1,4 +1,4 @@
-﻿namespace BerlinClock
+﻿namespace DotNetBerlinClock.Domain.Interfaces
 {
     public interface ITimeConverter
     {

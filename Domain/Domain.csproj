@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{581A547B-1522-4932-9BFF-A044B757387B}</ProjectGuid>
+    <ProjectGuid>{A1A723C6-86EE-4C50-9233-334B79454F49}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Clock</RootNamespace>
-    <AssemblyName>Clock</AssemblyName>
+    <RootNamespace>DotNetBerlinClock.Domain</RootNamespace>
+    <AssemblyName>DotNetBerlinClock.Domain</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -41,10 +41,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\BerlinClock.cs" />
+    <Compile Include="Classes\IoCContainerFactory.cs" />
+    <Compile Include="Classes\LampType.cs" />
+    <Compile Include="Classes\Time.cs" />
+    <Compile Include="Classes\TimeConverter.cs" />
+    <Compile Include="Interfaces\IBerlinClock.cs" />
     <Compile Include="Interfaces\IClock.cs" />
+    <Compile Include="Interfaces\IIocContainer.cs" />
     <Compile Include="Interfaces\ITime.cs" />
+    <Compile Include="Interfaces\ITimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Colors.Designer.cs">
+      <DependentUpon>Colors.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Error.Designer.cs">
+      <DependentUpon>Error.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Colors.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Colors.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Error.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Error.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

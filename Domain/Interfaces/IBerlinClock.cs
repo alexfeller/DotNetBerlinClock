@@ -1,7 +1,7 @@
-﻿using Clock;
+﻿using DotNetBerlinClock.Domain.Classes;
 using System.Collections.Generic;
 
-namespace BerlinClock
+namespace DotNetBerlinClock.Domain.Interfaces
 {
     /// <summary>
     /// Represents a Berlin clock. The clock is read from the top row to the bottom. 

@@ -1,15 +1,28 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using DotNetBerlinClock.IoC;
+using DotNetBerlinClock.Domain.Classes;
+using DotNetBerlinClock.Domain.Interfaces;
 
-namespace BerlinClock
+namespace DotNetBerlinClock
 {
     [Binding]
     public class TheBerlinClockSteps
     {
+        #region Constructor
+
+        public TheBerlinClockSteps()
+        {
+            Initializer.Initialize();
+            _berlinClock = IoCContainerFactory.Current.GetInstance<ITimeConverter>(); 
+        }
+
+        #endregion
+
         #region Fields
 
-        private ITimeConverter berlinClock = new TimeConverter();
+        private readonly ITimeConverter _berlinClock;
         private String theTime;
 
         #endregion
@@ -23,11 +36,11 @@ namespace BerlinClock
         }
         
         [Then(@"the clock should look like")]
-        public void ThenTheClockShouldLookLike(string theExpectedBerlinClockOutput)
+        public void ThenTheClockShouldLookLike(string expectedBerlinClockOutput)
         {
-            string currentBerlinClockOutput = berlinClock.ConvertTime(theTime);
+            string currentBerlinClockOutput = _berlinClock.ConvertTime(theTime);
 
-            Assert.AreEqual(currentBerlinClockOutput, theExpectedBerlinClockOutput);
+            Assert.AreEqual(currentBerlinClockOutput, expectedBerlinClockOutput);
         }
 
         #endregion

@@ -7,8 +7,8 @@
     <ProjectGuid>{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BerlinClock.Tests</RootNamespace>
-    <AssemblyName>BerlinClock.Tests</AssemblyName>
+    <RootNamespace>DotNetBerlinClock.BerlinClock.Tests</RootNamespace>
+    <AssemblyName>DotNetBerlinClock.BerlinClock.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -57,9 +57,13 @@
       <Project>{0451204d-bf86-43e1-b560-fc9ac830b9a9}</Project>
       <Name>BerlinClock</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Clock\Clock.csproj">
-      <Project>{581a547b-1522-4932-9bff-a044b757387b}</Project>
-      <Name>Clock</Name>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{a1a723c6-86ee-4c50-9233-334b79454f49}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IoC.StructureMapping\IoC.StructureMapping.csproj">
+      <Project>{cdffeb00-0d60-4331-9b32-d48a5c31621f}</Project>
+      <Name>IoC.StructureMapping</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -67,6 +71,9 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

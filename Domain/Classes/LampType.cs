@@ -1,4 +1,4 @@
-﻿namespace BerlinClock
+﻿namespace DotNetBerlinClock.Domain.Classes
 {
     /// <summary>
     /// Berlin clock lamp types.

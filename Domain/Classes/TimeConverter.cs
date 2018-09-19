@@ -1,10 +1,19 @@
-﻿using Clock;
+﻿using DotNetBerlinClock.Domain.Interfaces;
 using System;
 
-namespace BerlinClock
+namespace DotNetBerlinClock.Domain.Classes
 {
     public class TimeConverter : ITimeConverter
     {
+        #region Constructor
+
+        public TimeConverter()
+        {
+            _iocContainer = IoCContainerFactory.Current;
+        }
+
+        #endregion
+
         #region Public members
 
         /// <inheritdoc/>
@@ -17,11 +26,17 @@ namespace BerlinClock
 
             Time time = Time.Parse(aTime);
 
-            IClock<Time> clock = new BerlinClock();
+            var clock = _iocContainer.GetInstance<IBerlinClock>();
             clock.Set(time);
 
             return clock.ToString();
         }
+
+        #endregion
+
+        #region Fields
+
+        private static IIoCContainer _iocContainer;
 
         #endregion
     }
