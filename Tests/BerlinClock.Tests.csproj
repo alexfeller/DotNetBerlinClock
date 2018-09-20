@@ -53,10 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BerlinClock.csproj">
-      <Project>{0451204d-bf86-43e1-b560-fc9ac830b9a9}</Project>
-      <Name>BerlinClock</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{a1a723c6-86ee-4c50-9233-334b79454f49}</Project>
       <Name>Domain</Name>
