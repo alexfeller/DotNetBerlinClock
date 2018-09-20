@@ -56,9 +56,9 @@
       <Project>{a1a723c6-86ee-4c50-9233-334b79454f49}</Project>
       <Name>Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
+    <ProjectReference Include="..\Services\BerlinClock.csproj">
       <Project>{c46f3751-5897-460b-82d0-de4ef7551ed3}</Project>
-      <Name>Infrastructure</Name>
+      <Name>BerlinClock</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

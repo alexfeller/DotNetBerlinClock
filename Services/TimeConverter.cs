@@ -2,7 +2,7 @@
 using DotNetBerlinClock.Domain.Classes;
 using System;
 
-namespace DotNetBerlinClock.Infrastructure
+namespace DotNetBerlinClock.Services
 {
     public class TimeConverter : ITimeConverter
     {

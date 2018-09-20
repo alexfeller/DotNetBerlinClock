@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DotNetBerlinClock.Infrastructure.Resources {
+namespace DotNetBerlinClock.Services.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace DotNetBerlinClock.Infrastructure.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DotNetBerlinClock.Infrastructure.Resources.Colors", typeof(Colors).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("DotNetBerlinClock.Services.Resources.Colors", typeof(Colors).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

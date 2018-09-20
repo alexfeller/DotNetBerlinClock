@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock", "BerlinClock.csproj", "{0451204D-BF86-43E1-B560-FC9AC830B9A9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock.Tests", "Tests\BerlinClock.Tests.csproj", "{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock", "Tests\BerlinClock.csproj", "{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applicatoins", "Applicatoins", "{B32C07C3-5D58-4CB5-BA77-46CC605B8580}"
 EndProject
@@ -15,7 +13,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.StructureMapping", "IoC.StructureMapping\IoC.StructureMapping.csproj", "{CDFFEB00-0D60-4331-9B32-D48A5C31621F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C46F3751-5897-460B-82D0-DE4EF7551ED3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{881428B0-D9E8-4079-9330-3BC4FD51C5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock", "Applications\BerlinClock.csproj", "{0451204D-BF86-43E1-B560-FC9AC830B9A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerlinClock", "Services\BerlinClock.csproj", "{C46F3751-5897-460B-82D0-DE4EF7551ED3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +37,10 @@ Global
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,8 +50,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0451204D-BF86-43E1-B560-FC9AC830B9A9} = {B32C07C3-5D58-4CB5-BA77-46CC605B8580}
 		{C50382C7-B5F4-4FF9-B0C9-BDC55DCF7333} = {D0F62717-DBAD-4D1B-8B17-3247B0E91F9D}
+		{0451204D-BF86-43E1-B560-FC9AC830B9A9} = {B32C07C3-5D58-4CB5-BA77-46CC605B8580}
+		{C46F3751-5897-460B-82D0-DE4EF7551ED3} = {881428B0-D9E8-4079-9330-3BC4FD51C5D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7EC2EC9-1980-432D-8F7A-ED6E1B170057}

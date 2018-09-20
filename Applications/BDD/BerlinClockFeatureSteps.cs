@@ -5,7 +5,7 @@ using DotNetBerlinClock.IoC;
 using DotNetBerlinClock.Domain.Classes;
 using DotNetBerlinClock.Domain.Interfaces;
 
-namespace DotNetBerlinClock
+namespace DotNetBerlinClock.Applications
 {
     [Binding]
     public class TheBerlinClockSteps

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DotNetBerlinClock.Infrastructure
+namespace DotNetBerlinClock.Services
 {
     /// <inheritdoc/>
     public class BerlinClock : IBerlinClock

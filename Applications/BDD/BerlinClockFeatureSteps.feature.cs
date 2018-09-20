@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DotNetBerlinClock.BerlinClock.BDD
+namespace DotNetBerlinClock.Applications.BDD
 {
     using TechTalk.SpecFlow;
     
@@ -62,7 +62,7 @@ namespace DotNetBerlinClock.BerlinClock.BDD
             if (((testRunner.FeatureContext != null) 
                         && (testRunner.FeatureContext.FeatureInfo.Title != "The Berlin Clock")))
             {
-                global::DotNetBerlinClock.BerlinClock.BDD.TheBerlinClockFeature.FeatureSetup(null);
+                global::DotNetBerlinClock.Applications.BDD.TheBerlinClockFeature.FeatureSetup(null);
             }
         }
         
