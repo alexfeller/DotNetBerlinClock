@@ -1,7 +1,8 @@
 ﻿using DotNetBerlinClock.Domain.Interfaces;
+using DotNetBerlinClock.Domain.Classes;
 using System;
 
-namespace DotNetBerlinClock.Domain.Classes
+namespace DotNetBerlinClock.Infrastructure
 {
     public class TimeConverter : ITimeConverter
     {

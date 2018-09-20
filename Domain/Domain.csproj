@@ -41,22 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\BerlinClock.cs" />
     <Compile Include="Classes\IoCContainerFactory.cs" />
     <Compile Include="Classes\LampType.cs" />
     <Compile Include="Classes\Time.cs" />
-    <Compile Include="Classes\TimeConverter.cs" />
     <Compile Include="Interfaces\IBerlinClock.cs" />
     <Compile Include="Interfaces\IClock.cs" />
     <Compile Include="Interfaces\IIocContainer.cs" />
     <Compile Include="Interfaces\ITime.cs" />
     <Compile Include="Interfaces\ITimeConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Colors.Designer.cs">
-      <DependentUpon>Colors.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="Resources\Error.Designer.cs">
       <DependentUpon>Error.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -64,10 +57,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Colors.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Colors.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Error.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Error.Designer.cs</LastGenOutput>

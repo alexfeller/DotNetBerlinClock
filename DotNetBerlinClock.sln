@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC.StructureMapping", "IoC.StructureMapping\IoC.StructureMapping.csproj", "{CDFFEB00-0D60-4331-9B32-D48A5C31621F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C46F3751-5897-460B-82D0-DE4EF7551ED3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDFFEB00-0D60-4331-9B32-D48A5C31621F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46F3751-5897-460B-82D0-DE4EF7551ED3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

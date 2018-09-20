@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using DotNetBerlinClock.Domain.Classes;
 using DotNetBerlinClock.Domain.Interfaces;
+using DotNetBerlinClock.Infrastructure;
 
 namespace DotNetBerlinClock.IoC
 {

@@ -1,10 +1,11 @@
 ﻿using DotNetBerlinClock.Domain.Interfaces;
+using DotNetBerlinClock.Domain.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DotNetBerlinClock.Domain.Classes
+namespace DotNetBerlinClock.Infrastructure
 {
     /// <inheritdoc/>
     public class BerlinClock : IBerlinClock
