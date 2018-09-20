@@ -4,7 +4,6 @@ using DotNetBerlinClock.IoC.StructureMapping;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
-
 namespace DotNetBerlinClock.Tests
 {
     [TestClass()]

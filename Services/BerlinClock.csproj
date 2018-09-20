@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DotNetBerlinClock.Services</RootNamespace>
-    <AssemblyName>DotNetBerlinClock.Services</AssemblyName>
+    <AssemblyName>Services.BerlinClock</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
