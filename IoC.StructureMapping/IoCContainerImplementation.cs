@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using DotNetBerlinClock.Domain.Interfaces;
 
-namespace DotNetBerlinClock.IoC
+namespace DotNetBerlinClock.IoC.StructureMapping
 {
     public class IoCContainerImplementation : IIoCContainer
     {

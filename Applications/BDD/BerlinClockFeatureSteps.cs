@@ -1,7 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using DotNetBerlinClock.IoC;
+using DotNetBerlinClock.IoC.StructureMapping;
 using DotNetBerlinClock.Domain.Classes;
 using DotNetBerlinClock.Domain.Interfaces;
 

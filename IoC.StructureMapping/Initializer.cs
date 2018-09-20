@@ -3,7 +3,7 @@ using DotNetBerlinClock.Domain.Classes;
 using DotNetBerlinClock.Domain.Interfaces;
 using DotNetBerlinClock.Services;
 
-namespace DotNetBerlinClock.IoC
+namespace DotNetBerlinClock.IoC.StructureMapping
 {
     public static class Initializer
     {
