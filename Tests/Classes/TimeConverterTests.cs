@@ -6,7 +6,6 @@ using System;
 
 namespace DotNetBerlinClock.Tests
 {
-  
     [TestClass()]
     public class TimeConverterTests
     {
