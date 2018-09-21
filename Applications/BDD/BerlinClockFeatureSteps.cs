@@ -23,7 +23,7 @@ namespace DotNetBerlinClock.Applications
         #region Fields
 
         private readonly ITimeConverter _berlinClock;
-        private String theTime;
+        private String _time;
 
         #endregion
 
@@ -32,13 +32,13 @@ namespace DotNetBerlinClock.Applications
         [When(@"the time is ""(.*)""")]
         public void WhenTheTimeIs(string time)
         {
-            theTime = time;
+            this._time = time;
         }
         
         [Then(@"the clock should look like")]
         public void ThenTheClockShouldLookLike(string expectedBerlinClockOutput)
         {
-            string currentBerlinClockOutput = _berlinClock.ConvertTime(theTime);
+            string currentBerlinClockOutput = _berlinClock.ConvertTime(_time);
 
             Assert.AreEqual(currentBerlinClockOutput, expectedBerlinClockOutput);
         }

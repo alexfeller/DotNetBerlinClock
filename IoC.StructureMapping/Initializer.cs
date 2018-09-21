@@ -5,8 +5,16 @@ using DotNetBerlinClock.Services;
 
 namespace DotNetBerlinClock.IoC.StructureMapping
 {
+    /// <summary>
+    /// Registration of the service components.
+    /// </summary>
     public static class Initializer
     {
+        #region Public members
+
+        /// <summary>
+        /// Register the service components.
+        /// </summary>
         public static void Initialize()
         {
             var containerBuilder = new ContainerBuilder();
@@ -18,5 +26,7 @@ namespace DotNetBerlinClock.IoC.StructureMapping
 
             IoCContainerFactory.Current = new IoCContainerImplementation(build);
         }
+
+        #endregion
     }
 }

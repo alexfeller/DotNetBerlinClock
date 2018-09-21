@@ -4,10 +4,14 @@ using System;
 
 namespace DotNetBerlinClock.IoC.StructureMapping
 {
+    /// <inheritdoc/>
     public class IoCContainerImplementation : IIoCContainer
     {
         #region Constructor
 
+        /// <summary>
+        ///  Initializes a new instance of the IoCContainerImplementation class.
+        /// </summary>
         public IoCContainerImplementation(IContainer container)
         {
             if(container is null)
@@ -22,6 +26,7 @@ namespace DotNetBerlinClock.IoC.StructureMapping
 
         #region Public members
 
+        /// <inheritdoc/>
         public T GetInstance<T>()
         {
             return _container.Resolve<T>();
